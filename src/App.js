@@ -1,6 +1,11 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Switch from '@mui/material/Switch';
+
+
+// import { Switch } from '@mui/material';
 
 
 
@@ -9,6 +14,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
+
 
 
 import "./App.css";
