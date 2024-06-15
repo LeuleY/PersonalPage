@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Switch from '@mui/material/Switch';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 
 // import { Switch } from '@mui/material';
@@ -23,33 +25,32 @@ function App() {
   return (
     <Container>
       <Grid container>
+
         <Grid item
           xs={12}
           sm={12}
           md={4}
           lg={3}
-          style={{ backgroundColor: "blue" }}
           
         >
           <Profile />
         </Grid>
+
         <Grid item xs style={{ backgroundColor: "red" }}>
           <Header />
 
           <Router>
-            <Switch>
-              <Route path="/Portfolio">
-                <Portfolio />
-              </Route>
+            <Routes>
 
-              <Route path="/">
-                <Resume />
-              </Route>
-            </Switch>
+              <Route path="/Portfolio" element={<Portfolio />} />
+              <Route path="/" element={<Resume />} />
+
+            </Routes>
           </Router>
 
           <Footer />
         </Grid>
+        
       </Grid>
     </Container>
   );
