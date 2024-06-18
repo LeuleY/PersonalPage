@@ -1,9 +1,10 @@
 import { Typography } from '@mui/material'
 import React from 'react'
+import CoustommTimeline from '../Timeline/Timeline'
 
 
 import "./Profile.css";
-
+    
 
 const Profile = () => {
   return (
@@ -20,7 +21,8 @@ const Profile = () => {
         </figure>
 
         <div className='profile_information'>
-          Timeline
+        <CoustommTimeline/>
+          
           <br/>
           
           <button>
