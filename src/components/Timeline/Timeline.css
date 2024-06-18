@@ -1,0 +1,38 @@
+.Timeline{
+    padding: 0 !important;
+}
+
+.Timeline .Timeline_header{
+    padding-top: 7px;
+
+}
+
+
+.Timeline .Timeline_FirstItem{
+    min-width: 80px !important;
+}
+
+
+
+.Timeline .MuiTimelineContent-root{
+    min-height: 0px;
+
+
+}
+
+.Timeline .MuiTimelineItem-root{
+    min-width: 0px;
+}
+
+.Timeline .MuiTimelineItem-missingOppositeContent:before{
+    display:none;
+}
+
+.Timeline .Timeline_dot_header{
+    color: black !important;
+    background-color: var(--main-color) !important;
+    font-size: small !important;
+    padding: 2px !important;
+}
+
+/* 26.36 */

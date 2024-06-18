@@ -10,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(111, 124, 138);
-  overflow: hidden;
+  overflow: auto; /* Adds scrollbars when necessary */
+
 }
 
 code {
