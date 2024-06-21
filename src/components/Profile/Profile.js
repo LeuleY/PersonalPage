@@ -4,14 +4,16 @@ import CoustommTimeline from '../Timeline/Timeline'
 
 
 import "./Profile.css";
+import resumeData from "../../utils/resumeData.js";
+import PersonIcon from '@mui/icons-material/Person';
     
 
 const Profile = () => {
   return (
     <div className='profile container_shadow'>
       <div className='profile_name'>
-      <Typography className='name'>   Leule Yonas </Typography>
-      <Typography className= 'title'>  Software Engineer  </Typography>
+      <Typography className='name'>   {resumeData.Name} </Typography>
+      <Typography className= 'title'>  {resumeData.Title} </Typography>
 
       </div>
       
@@ -21,7 +23,7 @@ const Profile = () => {
         </figure>
 
         <div className='profile_information'>
-        <CoustommTimeline/>
+        <CoustommTimeline icon={<PersonIcon/>}/>
           
           <br/>
           
@@ -36,4 +38,5 @@ const Profile = () => {
   )
 }
 
+// 13/10
 export default Profile

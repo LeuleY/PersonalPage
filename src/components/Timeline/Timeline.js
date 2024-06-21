@@ -8,6 +8,8 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import WorkIcon from '@mui/icons-material/Work';
 
 import './Timeline.css'
+
+
 import { Typography } from '@mui/material';
 
 const Timelinee = ({title,children, icon}) => {
