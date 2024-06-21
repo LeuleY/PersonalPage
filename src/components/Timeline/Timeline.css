@@ -32,7 +32,26 @@
     color: black !important;
     background-color: var(--main-color) !important;
     font-size: small !important;
+    padding: 10px !important;
+}
+
+.Timeline .Timeline.dot{
+    color: black; 
+    border-color: var(--main-color) !important;
     padding: 2px !important;
 }
 
-/* 26.36 */
+.Timeline .MuiTimelineConnector-root{
+    /* background-color: #b8abab00 ; */
+}
+
+.Timeline .Timeline_dot_header > .MuiSvgIcon-root {
+    font-size: 20px;
+    color: darkslategray
+
+}
+
+.Timeline .css-1fe7e6p-MuiTimelineSeparator-root{
+    padding-left: 18px;
+}
+

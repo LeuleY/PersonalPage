@@ -10,7 +10,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import './Timeline.css'
 import { Typography } from '@mui/material';
 
-const Timelinee = ({title, item, children, icon}) => {
+const Timelinee = ({title,children, icon}) => {
   return (
     
 
@@ -19,7 +19,7 @@ const Timelinee = ({title, item, children, icon}) => {
 {/* Timeline Header */}
     <TimelineItem className={'Timeline_FirstItem'}>
       <TimelineSeparator>
-        <TimelineDot className={'Timeline_dot_header'}> {<WorkIcon/>}</TimelineDot>
+        <TimelineDot className={'Timeline_dot_header'}> {icon}</TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent> 
@@ -30,19 +30,7 @@ const Timelinee = ({title, item, children, icon}) => {
 
     {children}
 
-{/* Remaining Items */}
-    <TimelineItem>
-      <CoustommTimelineSeparator/>      {/* calling the function separator */}
-
-      <TimelineContent>{title}</TimelineContent>
-    </TimelineItem>
-
-    <TimelineItem>
-     <CoustommTimelineSeparator/>      {/* calling the function separator */}
-
-
-     <TimelineContent>{item}</TimelineContent>
-    </TimelineItem>
+  
   </Timeline>
   
   )
@@ -51,7 +39,7 @@ const Timelinee = ({title, item, children, icon}) => {
 
 export const CoustommTimelineSeparator = () =>(
     <TimelineSeparator className='Separator_padding'>
-        <TimelineDot className={'Timeline_dot'}/>
+        <TimelineDot variant={"outlined"} className={'Timeline_dot'}/>
         <TimelineConnector />
       </TimelineSeparator>
     

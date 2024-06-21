@@ -10,7 +10,7 @@ const Profile = () => {
   return (
     <div className='profile container_shadow'>
       <div className='profile_name'>
-      <Typography classsName='name'>   Leule Yonas </Typography>
+      <Typography className='name'>   Leule Yonas </Typography>
       <Typography className= 'title'>  Software Engineer  </Typography>
 
       </div>
