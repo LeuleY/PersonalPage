@@ -1,12 +1,26 @@
 import { Typography } from '@mui/material'
 import React from 'react'
-import CoustommTimeline from '../Timeline/Timeline'
-
-
+import CoustommTimeline, {CoustommTimelineSeparator} from '../Timeline/Timeline'
 import "./Profile.css";
 import resumeData from "../../utils/resumeData.js";
 import PersonIcon from '@mui/icons-material/Person';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineContent from '@mui/lab/TimelineContent';
     
+
+const CoustommTimelineItem = ({title, text , link }) => (
+  <TimelineItem>
+      <CoustommTimelineSeparator/>
+      <TimelineContent>
+      {link ?(<Typography>
+        <span>{title}:</span> <a href={link} target='blank'></a>
+      </Typography>) : (
+        <Typography><span>{title}:</span>{text}</Typography>
+      )}
+      </TimelineContent>
+  
+</TimelineItem>
+)
 
 const Profile = () => {
   return (
@@ -23,7 +37,12 @@ const Profile = () => {
         </figure>
 
         <div className='profile_information'>
-        <CoustommTimeline icon={<PersonIcon/>}/>
+        <CoustommTimeline icon={<PersonIcon/>} >
+        <CoustommTimelineItem title='Name' text={resumeData.Name}               />
+        <CoustommTimelineItem title='Postion' text={resumeData.Title}               />
+        <CoustommTimelineItem title='Email' text={resumeData.Email}               />
+
+        </CoustommTimeline>
           
           <br/>
           

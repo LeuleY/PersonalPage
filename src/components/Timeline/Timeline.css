@@ -47,11 +47,13 @@
 
 .Timeline .Timeline_dot_header > .MuiSvgIcon-root {
     font-size: 20px;
-    color: darkslategray
+    color: rgb(0, 0, 0)
 
 }
 
 .Timeline .css-1fe7e6p-MuiTimelineSeparator-root{
     padding-left: 18px;
 }
+
+
 
