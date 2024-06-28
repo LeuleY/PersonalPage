@@ -41,9 +41,9 @@
     padding: 2px !important;
 }
 
-.Timeline .MuiTimelineConnector-root{
-    /* background-color: #b8abab00 ; */
-}
+/* .Timeline .MuiTimelineConnector-root{
+    background-color: #b8abab00 ;
+} */
 
 .Timeline .Timeline_dot_header > .MuiSvgIcon-root {
     font-size: 20px;
@@ -53,6 +53,9 @@
 
 .Timeline .css-1fe7e6p-MuiTimelineSeparator-root{
     padding-left: 18px;
+}
+.css-6xp33q-MuiTimelineDot-root{
+    border-color: red !important;
 }
 
 
