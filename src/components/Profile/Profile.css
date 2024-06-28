@@ -51,7 +51,7 @@
 }
 
 .timelineItem_text{
-    font-size: 14.5px !important;
+    font-size: 13px !important;
     font-weight: 400;
     color: rgb(89, 88, 88) !important;
 }
@@ -64,4 +64,17 @@
 .timelineItem_text > span{
    
     color: rgb(0, 0, 0) !important;
+}
+
+.profile .button_container{
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.download_text{
+    color: black;
 }

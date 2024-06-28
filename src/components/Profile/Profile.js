@@ -1,17 +1,17 @@
-import { Typography } from "@mui/material";
+import {  Typography } from "@mui/material";
 import React from "react";
-import CoustommTimeline, {
-  CoustommTimelineSeparator,
-} from "../Timeline/Timeline";
+import CustomTimeline, {CustomTimelineSeparator,} from "../Timeline/Timeline";
 import "./Profile.css";
 import resumeData from "../../utils/resumeData.js";
 import PersonIcon from "@mui/icons-material/Person";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
+import CustomButton from '../Button/Button'
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
-const CoustommTimelineItem = ({ title, text, link, icon }) => (
+const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
-    <CoustommTimelineSeparator />
+    <CustomTimelineSeparator />
     <TimelineContent className="timeline_content">
       {link ? (
         <Typography className="timelineItem_text">
@@ -43,24 +43,24 @@ const Profile = () => {
       </figure>
 
       <div className="profile_information">
-        <CoustommTimeline icon={<PersonIcon />}>
-          <CoustommTimelineItem title="Name" text={resumeData.Name} />
-          <CoustommTimelineItem title="Postion" text={resumeData.Title} />
-          <CoustommTimelineItem title="Email" text={resumeData.Email} />
+        <CustomTimeline icon={<PersonIcon />}>
+          <CustomTimelineItem title="Name" text={resumeData.Name} />
+          <CustomTimelineItem title="Postion" text={resumeData.Title} />
+          <CustomTimelineItem title="Email" text={resumeData.Email} />
 
           {Object.keys(resumeData.Socials).map((key) => (
-            <CoustommTimelineItem
+            <CustomTimelineItem
               title={key}
               text={resumeData.Socials[key].text}
               link={resumeData.Socials[key].link}
             />
           ))}
-        </CoustommTimeline>
+        </CustomTimeline>
+            <div className="button_container">
+            <CustomButton className="download_text" text={"Download CV"} icon={<CloudDownloadIcon/>}/>
 
-        <br />
-
-        <button>myButton</button>
-      </div>
+            </div>
+        </div>
     </div>
   );
 };
