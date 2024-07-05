@@ -24,6 +24,8 @@ export default {
 
 
         }
-    }
+    },
+
+    About: "Dedicated focus on problem-solving and collaborative teamwork for thriving in software development. Very eager to apply experience to intricate projects, Willing to learn and work  and very enthusiastic about contributing knowledge in a professional setting. "
 
 };

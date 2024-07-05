@@ -18,3 +18,39 @@
     -webkit-box-shadow: 0px 2px 92px 0px ;
     -moz-box-shadow:  0px 2px 92px 0px ;;
 }
+
+.main-content{
+    background-color: white;
+    min-height: 100vh;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 30px;
+  } 
+
+.section title{
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.section title .section_title_text{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+}
+
+.section_title_span{
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom:0;
+    opacity: 0.4;
+    left: 0;
+    background-color: var(--main-color);
+
+}
+
+/* 21:56 */
