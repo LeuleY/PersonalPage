@@ -26,6 +26,36 @@ export default {
         }
     },
 
-    About: "Dedicated focus on problem-solving and collaborative teamwork for thriving in software development. Very eager to apply experience to intricate projects, Willing to learn and work  and very enthusiastic about contributing knowledge in a professional setting. "
+    About: "Dedicated focus on problem-solving and collaborative teamwork for thriving in software development. Very eager to apply experience to intricate projects, Willing to learn and work  and very enthusiastic about contributing knowledge in a professional setting. ",
 
+    Experiences:[
+        {
+            Title: " Data Science",
+            Date: "Jan 2024 - May 2024",
+            Description: "Baltimore Data Science Corps , focused on analytics of Baltimore 311 calls and Baltimore crime. Researched, analyzed, and organized public Baltimore crime data to highlight and bring awareness to criminal activity problems.Used Streamlit and Pandas with Python to clean the data and transform CSV files into a functional map graph to visualize the cleaned data. Worked in an Agile environment to organize data and look at trends that affected the city of Baltimore. ",
+
+        },
+
+        {
+            Title: "IT Assistant",
+            Date: "Spring 2023 - Fall 2023",
+            Description: "Provided technical assistance to students and faculty with technical questions, troubleshooting problems, network service access requests, and software installation. Tutored and assisted students with understanding significant course concepts, developing problem-solving strategies and study techniques"
+
+        },
+
+
+    ],
+
+    
+    Education:[
+        {
+            School: " Data Science",
+            Date: "Jan 2024 - May 2024",
+            Degree: "Bachlor of Science in Computer Science"
+        },
+
+        
+
+
+    ],
 };
