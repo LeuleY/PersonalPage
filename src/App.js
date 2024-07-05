@@ -34,7 +34,7 @@ function App() {
           <Profile />
         </Grid>
 
-        <Grid item xs style={{ backgroundColor: "red" }}>
+        <Grid item xs style={{ backgroundColor: "" }}>
 
           <Router>
           <Header />
