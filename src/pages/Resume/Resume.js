@@ -8,16 +8,16 @@ const Resume = () => {
   return (
     <>
       {/* ABOUT ME */}
-      <Grid container className="section">
-        <Grid item className="section_title" xs={12}>
+      <Grid container className="section pb_45">
+        <Grid item className="section_title mb_30" xs={12}>
           <span>
 
           </span>
-          <Typography variant="h6" className="section_title_text">ABOUT ME</Typography>
+          <h6 variant="h6" className="section_title_text">ABOUT ME</h6>
 
         </Grid>
           <Grid item xs={12}>
-            <Typography className="aboutme_text">
+            <Typography variant="body2" className="aboutme_text">
               {resumeData.About}
             </Typography>
 
