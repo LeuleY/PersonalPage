@@ -49,9 +49,9 @@ export default {
     
     Education:[
         {
-            School: " Data Science",
-            Date: "Jan 2024 - May 2024",
-            Degree: "Bachlor of Science in Computer Science"
+            School: " Towson University ",
+            Date: "Sep 2021 - May 2025",
+            Degree: "Bachelor of Science in Computer Science"
         },
 
         
