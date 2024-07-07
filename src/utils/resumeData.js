@@ -58,4 +58,26 @@ export default {
 
 
     ],
+
+    Skills:[
+        {title: "FRONT-END",
+         description: ["ReactJS", "Java", "Python", "JavaScript", ] 
+
+
+
+        },
+        {title: "BACK-END",
+            description: ["MongoDB", "PostgreSQL", "Supabase",  ] 
+   
+   
+   
+           },
+            {title: "DATA SCIENCE",
+                description: ["Jupyter", "R", "Python",  ] 
+    
+    
+    
+            }
+
+    ],
 };
