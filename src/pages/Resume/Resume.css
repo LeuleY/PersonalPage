@@ -31,6 +31,8 @@
     box-shadow: 0px 0px 20px 0px !important ;
     min-height: 186px !important;
     height: 100% !important;
+    
+
 
 }
 
@@ -39,6 +41,8 @@
     font-size: 14px !important;
     font-weight: 500 !important;
     line-height: 35px !important;
+    
+    
     
 }
 
@@ -63,7 +67,8 @@
 }
 
 .skill_container{
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
 
 
 }

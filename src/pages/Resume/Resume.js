@@ -105,7 +105,7 @@ const Resume = () => {
         className="section graybg pb_45 p_50"
       >
         <Grid item xs={12}>
-                <Grid container className="skill_container">
+                <Grid container justify = "space-between"  spacing={3} className="skill_container">
                 <Grid item className="section_title mb_30" xs={12}>
           <span></span>
           <h6 variant="h6" className="section_title_text">

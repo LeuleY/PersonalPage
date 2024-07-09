@@ -60,24 +60,25 @@ export default {
     ],
 
     Skills:[
-        {title: "FRONT-END",
-         description: ["ReactJS", "Java", "Python", "JavaScript", ] 
+        {title: "LANGUAGES",
+         description: ["JAVA", "PYTHON", "JavaScript", "R", "HTML" , "CSS" ] 
+
+
+        },
+        {title: "DBMS",
+            description: ["MongoDB", "PostgreSQL", "Supabase", "MYSQL"  ]   
+   
+   
+        },
+        {title: "TOOLS & FRAMEWORKS",
+            description: ["GIT", "REACTJS", "DOCKER", "NODE" , "GITHUB" , "JUPYTER", "FLASK" , "PYSCRIPT" ]    
+    
+        },{title: "OPERATING SYSTEMS",
+            description: ["LINUX", "WINDOWS", "MAC",  ] 
 
 
 
         },
-        {title: "BACK-END",
-            description: ["MongoDB", "PostgreSQL", "Supabase",  ] 
-   
-   
-   
-           },
-            {title: "DATA SCIENCE",
-                description: ["Jupyter", "R", "Python",  ] 
-    
-    
-    
-            }
 
     ],
 };
