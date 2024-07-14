@@ -1,6 +1,7 @@
 import React from "react"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Portfolio from "../pages/Portfolio/Portfolio";
 
 export default {
     Name: " Leule Yonas" ,
@@ -26,13 +27,13 @@ export default {
         }
     },
 
-    About: "Hi , I am Leule Yonas, dedicated focus on problem-solving and collaborative teamwork for thriving in software development environment. Very eager to apply my experiences to intricate projects. Alway willing to learn and work. That being said I am very enthusiastic about contributing my knowledge in a professional setting. Very thrilled to show you what I am capable of ",
+    About: "Hi , I am Leule Yonas, a dedicated software engineer focused on problem-solving and collaborative teamwork for thriving in software development environment. Very eager to apply my experiences to intricate projects. Alway willing to learn and work. That being said I am very enthusiastic about contributing my knowledge in a professional setting. Very thrilled to show you what I am capable of ",
 
     Experiences:[
         {
             Title: "TU-COE Robotics Summer Camp instructor",
             Date: "June 2024 - Aug 2024",
-            Description: "TU-COE-Robotics Program focused on helping students improve STEM and creativity skills, and develop their expressive languag"
+            Description: "TU-COE-Robotics Program focused on helping students improve STEM and creativity skills, and develop their expressive language."
 
         },
         {
@@ -68,7 +69,7 @@ export default {
 
     Skills:[
         {title: "LANGUAGES",
-         description: ["JAVA", "PYTHON", "JavaScript", "R", "HTML" , "CSS" ] 
+         description: ["Java", "Python", "JavaScript", "R", "HTML" , "CSS" ] 
 
 
         },
@@ -88,4 +89,65 @@ export default {
         },
 
     ],
+
+    projects:[
+
+        // {PROJECT 1}
+        {
+            tag: 'WebDev',
+            image:'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+            title:'Project 1',
+            description: 'description',
+            links:[
+                {
+                    link:'www.google.com',
+                    icon:<GitHubIcon/>
+                 
+
+
+
+                },
+            ],
+
+        },
+
+
+        // Project 2 
+        {
+            tag: 'DataScience',
+            image:'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+            title:'Project 1',
+            description: 'description',
+            links:[
+                {
+                    link:'www.google.com',
+                    icon:<GitHubIcon/>
+                 
+
+
+
+                },
+            ],
+
+        },
+
+        // Project 3
+        {
+            tag: '3rd',
+            image:'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+            title:'Project 1',
+            description: 'description',
+            links:[
+                {
+                    link:'www.google.com',
+                    icon:<GitHubIcon/>
+                 
+
+
+
+                },
+            ],
+
+        }
+    ]
 };
