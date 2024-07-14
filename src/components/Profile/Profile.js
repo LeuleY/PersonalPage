@@ -44,7 +44,7 @@ const Profile = () => {
 
       <div className="profile_information">
         <CustomTimeline icon={<PersonIcon />}>
-          <CustomTimelineItem title="Name" text={resumeData.Name} />
+          <CustomTimelineItem title="Name" text={resumeData.Name} />        
           <CustomTimelineItem title="Postion" text={resumeData.Title} />
           <CustomTimelineItem title="Email" text={resumeData.Email} />
 

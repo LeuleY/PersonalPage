@@ -25,7 +25,7 @@ const Portfolio = () => {
   const [projectDialog, setProjectDialog] = useState(false);
 
   return (
-    <Grid container className="section pb_45 pt_45">
+    <Grid container spacing={1} className="section pb_45 pt_45">
       {/* TITLE */}
       <Grid item className="section_title mb_30" xs={12}>
         <span></span>
@@ -39,7 +39,7 @@ const Portfolio = () => {
         <Tabs
           value={tabValue}
           indicatorColor="white"
-          className="custom_tabs"
+          className="customTabs"
           onChange={(event, newValue) => setTabValue(newValue)}
         >
           <Tab
@@ -56,7 +56,7 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabValue == "All"
+                  tabValue == tag
                     ? "customTabs_item active"
                     : "customTabs_item"
                 }
@@ -65,11 +65,12 @@ const Portfolio = () => {
           )}
         </Tabs>
       </Grid>
+      
 
       {/* Projects */}
 
       <Grid item xs={12}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {resumeData.projects.map((project) => (
             <>
               {tabValue == project.tag || tabValue == "All" ? (
@@ -113,11 +114,15 @@ const Portfolio = () => {
           {projectDialog.title}
         </DialogTitle>
 
-        <img src="" />
-        <DialogContent>{projectDialog.description}</DialogContent>
-        <DialogActions>
+        <img src="" alt="" className="projectDialog_image" />
+        <DialogContent>
+          <Typography className="projectDialog_description">
+            {projectDialog.description}
+          </Typography>
+        </DialogContent>
+        <DialogActions className="projectDialog_actions">
           {projectDialog?.links?.map((link) => (
-            <a href={link.link} target="_blank">
+            <a href={link.link} target="_blank" className="projectDialog_icon">
               {link.icon}
             </a>
           ))}
