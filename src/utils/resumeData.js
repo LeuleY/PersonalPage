@@ -96,7 +96,12 @@ export default {
         // {PROJECT 1}
         {
             tag: 'WebDev',
-            image:require("../assets/images/pfp.jpg") ,
+            images:[
+                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+
+
+            ],
             title:'Top Song Generator',
             caption: "Website that spews the top 10 song of the artist you enter.",
             description: 'description',
@@ -114,7 +119,12 @@ export default {
 
         {
             tag: 'WebDev',
-            image:require("../assets/images/pfp.jpg") ,
+            images:[
+                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+
+
+            ],
             title:'Personal Resume',
             caption: "The exact website you are currently on!",
             description: 'description',
@@ -134,7 +144,12 @@ export default {
         // Project 2 
         {
             tag: 'DataScience',
-            image:'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+            images:[
+                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+
+
+            ],
             title:'Project 2',
             caption: "short description",
             description: 'description',
@@ -152,7 +167,12 @@ export default {
         // Project 3
         {
             tag: '3rd',
-            image:'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+            images:[
+                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+
+
+            ],
             title:'Project 3',
             caption: "short description",
             description: 'description',

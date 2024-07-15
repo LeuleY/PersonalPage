@@ -19,6 +19,7 @@ import {
   DialogActions,
 } from "@mui/material";
 import resumeData from "../../utils/resumeData";
+import ImageGallery from "../../components/ImageGallery/ImageGallery";
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
@@ -110,17 +111,24 @@ const Portfolio = () => {
       </Grid>
 
       <Dialog
-        open={projectDialog}
+        open={Boolean(projectDialog)}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
+        maxWidth={'md'} //change size of pop up when seeing projects
         fullWidth
       >
         <DialogTitle onClose={() => setProjectDialog(false)}>
           {projectDialog.title}
         </DialogTitle>
 
-        <img src={projectDialog.image} alt="" className="projectDialog_image" />
+        {/* <img src={projectDialog.image} alt="" className="projectDialog_image" /> */}
         <DialogContent>
+            {projectDialog.images && (
+              <ImageGallery images={projectDialog.images}/>
+            )}
+
+
+
           <Typography className="projectDialog_description">
             {projectDialog.description}
           </Typography>
