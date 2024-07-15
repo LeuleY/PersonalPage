@@ -2,6 +2,7 @@ import React from "react"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Portfolio from "../pages/Portfolio/Portfolio";
+import LaunchSharpIcon from '@mui/icons-material/LaunchSharp';
 
 export default {
     Name: " Leule Yonas" ,
@@ -96,8 +97,26 @@ export default {
         {
             tag: 'WebDev',
             image:require("../assets/images/pfp.jpg") ,
-            title:'Project 1',
-            caption: "short description",
+            title:'Top Song Generator',
+            caption: "Website that spews the top 10 song of the artist you enter.",
+            description: 'description',
+            links:[
+                {
+                    link:'www.google.com',
+                    icon:<GitHubIcon/>              
+
+
+
+                },
+            ],
+
+        },
+
+        {
+            tag: 'WebDev',
+            image:require("../assets/images/pfp.jpg") ,
+            title:'Personal Resume',
+            caption: "The exact website you are currently on!",
             description: 'description',
             links:[
                 {
@@ -121,8 +140,11 @@ export default {
             description: 'description',
             links:[
                 {
-                    link:'www.google.com',
-                    icon:<GitHubIcon/>
+                    link:'https://311mappeddata.streamlit.app/', icon:<LaunchSharpIcon/>,
+                    link:'https://github.com/LeuleY', icon:<GitHubIcon/>
+
+
+
                  
 
 
