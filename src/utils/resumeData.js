@@ -102,8 +102,7 @@ export default {
             links:[
                 {
                     link:'www.google.com',
-                    icon:<GitHubIcon/>
-                 
+                    icon:<GitHubIcon/>              
 
 
 
