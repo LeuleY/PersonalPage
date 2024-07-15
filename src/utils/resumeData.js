@@ -140,15 +140,10 @@ export default {
             description: 'description',
             links:[
                 {
-                    link:'https://311mappeddata.streamlit.app/', icon:<LaunchSharpIcon/>,
+                    link:'https://311mappeddata.streamlit.app/', icon:<LaunchSharpIcon/>         
+                },
+                {
                     link:'https://github.com/LeuleY', icon:<GitHubIcon/>
-
-
-
-                 
-
-
-
                 },
             ],
 

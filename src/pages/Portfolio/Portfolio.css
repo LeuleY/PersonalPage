@@ -1,6 +1,6 @@
 .customTabs .customTabs_item{
     padding: 0px !important;
-    min-width: 20px !important;
+    min-width: 0px !important;
     margin-right: 20px !important;
     text-transform: inherit !important;
     font-size: 14px !important;
@@ -33,8 +33,10 @@
 
 .customCard .customTabs_action{
     color: gray !important;
-    font-weight: 300;
+    font-weight: 400;
 }
+
+
 
 
 .projectDialog .projectDialog_image{
@@ -44,6 +46,9 @@
     object-position: center center;
 
 
+}
+.css-knqc4i-MuiDialogActions-root{
+    justify-content: center !important;
 }
 .projectDialog .projectDialog_description{
     margin-top: 10px !important;
