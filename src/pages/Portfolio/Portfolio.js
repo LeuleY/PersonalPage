@@ -81,7 +81,7 @@ const Portfolio = () => {
                       <CardActionArea>
                         <CardMedia
                           className="customCard_image"
-                          image={project.image}
+                          image={project.images}
                           title={project.title}
                         />
 
@@ -122,7 +122,7 @@ const Portfolio = () => {
         </DialogTitle>
 
         {/* <img src={projectDialog.image} alt="" className="projectDialog_image" /> */}
-        <DialogContent>
+        <DialogContent style={{ height: "80vh"}}>
             {projectDialog.images && (
               <ImageGallery images={projectDialog.images}/>
             )}

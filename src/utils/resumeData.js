@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Portfolio from "../pages/Portfolio/Portfolio";
 import LaunchSharpIcon from '@mui/icons-material/LaunchSharp';
+import pfp from "../assets/images/pfp.jpg"
 
 export default {
     Name: " Leule Yonas" ,
@@ -97,7 +98,7 @@ export default {
         {
             tag: 'WebDev',
             images:[
-                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+                pfp,  //imported but work on image not apperaing righ on thumbnail, check image or image"s" in portfolio.js if not chat 
                 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
 
 
