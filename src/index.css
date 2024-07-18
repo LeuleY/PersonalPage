@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(111, 124, 138);
   overflow: auto; /* Adds scrollbars when necessary */
+  background-color: rgb(182, 187, 189)  !important ;
 
 }
 

@@ -97,17 +97,16 @@ export default {
         {
             tag: 'WebDev',
             images:[
-                                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
                                 
-                                'https://i.imgur.com/ZU5ksEZ.jpeg',
-  //imported but work on image not apperaing righ on thumbnail, check image or image"s" in portfolio.js if not chat 
-                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
-
+                'https://i.imgur.com/Pj8YZ3B.png',
+                'https://i.imgur.com/cOGVEGb.png',
+                        
+                
 
             ],
             title:'Top Song Generator',
             caption: "Website that spews the top 10 song of the artist you enter.",
-            description: 'description',
+            description: 'A service website that allows the user to enter an artist of their choice,  the website will then expand on the top 10 songs the artist has in an order fashion , based on highest streams. Used Python to construct code and receive client ID and client Secret from Spotify API. Used Flask to translate HTML code to display to live host.',
             links:[
                 {
                     link:'www.google.com',
@@ -120,42 +119,25 @@ export default {
 
         },
 
-        {
-            tag: 'WebDev',
-            images:[
-                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
-                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
-
-
-            ],
-            title:'Personal Resume',
-            caption: "The exact website you are currently on!",
-            description: 'description',
-            links:[
-                {
-                    link:'www.google.com',
-                    icon:<GitHubIcon/>              
-
-
-
-                },
-            ],
-
-        },
+       
 
 
         // Project 2 
         {
             tag: 'DataScience',
             images:[
-                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
-                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+                'https://i.imgur.com/IrxENQU.png',
+                'https://i.imgur.com/8P2YiXd.png',
+                'https://i.imgur.com/1pNBITB.png',
+                'https://i.imgur.com/kLovFOD.png',
+                'https://i.imgur.com/MHKrtSG.png',
+
 
 
             ],
-            title:'Project 2',
-            caption: "short description",
-            description: 'description',
+            title:'Baltimore Data Science Corps',
+            caption: "Research Program with the NSF analyzing Baltimore crime and 311 calls. In hopes of tracking a trend in order to infer the coming call.",
+            description: 'Baltimore Data Science Corps , focused on analytics of Baltimore 311 calls and Baltimore crime. Researched, analyzed, and organized public Baltimore crime data to highlight and bring awareness to criminal activity problems.Used Streamlit and Pandas with Python to clean the data and transform CSV files into a functional map graph to visualize the cleaned data. Worked in an Agile environment to organize data and look at trends that affected the city of Baltimore.',
             links:[
                 {
                     link:'https://311mappeddata.streamlit.app/', icon:<LaunchSharpIcon/>         
@@ -167,29 +149,51 @@ export default {
 
         },
 
-        // Project 3
         {
-            tag: '3rd',
+            tag: 'WebDev',
             images:[
-                'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
-                'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
-
+                'https://i.imgur.com/oy8t3Jf.png',
+                'https://i.imgur.com/XMCspli.png',
 
             ],
-            title:'Project 3',
-            caption: "short description",
-            description: 'description',
+            title:'Personal Resume',
+            caption: "The exact website you are currently on!",
+            description: 'Personal website to display Leule Yonas information and achievments. Used React and MUI as a framework to construct resume page. ',
             links:[
                 {
-                    link:'www.google.com',
-                    icon:<GitHubIcon/>
-                 
+                    link:'https://github.com/LeuleY',
+                    icon:<GitHubIcon/>              
 
 
 
                 },
             ],
 
-        }
+        },
+
+        // Project 3
+        // {
+        //     tag: 'Marketing',
+        //     images:[
+        //         'https://i0.wp.com/www.thewrap.com/wp-content/uploads/2019/08/chuck-lorre-imag.jpg?fit=618%2C412&ssl=1',
+        //         'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
+
+
+        //     ],
+        //     title:'Commercial RealEstate Marketing',
+        //     caption: "short description",
+        //     description: 'description',
+        //     links:[
+        //         {
+        //             link:'www.google.com',
+        //             icon:<GitHubIcon/>
+                 
+
+
+
+        //         },
+        //     ],
+
+        // }
     ]
 };
