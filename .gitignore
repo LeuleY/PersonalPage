@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#keys
+personalresume-b4d29-firebase-adminsdk-5p6ou-fa3a350c11.json
