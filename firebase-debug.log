@@ -1,0 +1,81 @@
+[debug] [2024-07-21T21:11:35.663Z] ----------------------------------------------------------------------
+[debug] [2024-07-21T21:11:35.668Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project personalresume-b4d29 --debug
+[debug] [2024-07-21T21:11:35.668Z] CLI Version:   13.13.3
+[debug] [2024-07-21T21:11:35.668Z] Platform:      win32
+[debug] [2024-07-21T21:11:35.669Z] Node Version:  v20.14.0
+[debug] [2024-07-21T21:11:35.669Z] Time:          Sun Jul 21 2024 17:11:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-07-21T21:11:35.669Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-21T21:11:35.763Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-21T21:11:35.765Z] > authorizing via signed-in user (leule.merso2003@gmail.com)
+[debug] [2024-07-21T21:11:35.766Z] [iam] checking project personalresume-b4d29 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-21T21:11:35.768Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalresume-b4d29:testIamPermissions [none]
+[debug] [2024-07-21T21:11:35.769Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalresume-b4d29:testIamPermissions x-goog-quota-user=projects/personalresume-b4d29
+[debug] [2024-07-21T21:11:35.770Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalresume-b4d29:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-21T21:11:36.049Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalresume-b4d29:testIamPermissions 200
+[debug] [2024-07-21T21:11:36.050Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalresume-b4d29:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-21T21:11:36.052Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personalresume-b4d29 [none]
+[debug] [2024-07-21T21:11:36.363Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personalresume-b4d29 200
+[debug] [2024-07-21T21:11:36.364Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personalresume-b4d29 {"projectId":"personalresume-b4d29","projectNumber":"855342086613","displayName":"PersonalResume","name":"projects/personalresume-b4d29","resources":{"hostingSite":"personalresume-b4d29"},"state":"ACTIVE","etag":"1_5d0b19c8-950d-4da6-a329-b10fb0bfae9a"}
+[info] 
+[info] === Deploying to 'personalresume-b4d29'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-07-21T21:11:36.375Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions [none]
+[debug] [2024-07-21T21:11:36.376Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-07-21T21:11:37.580Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions 200
+[debug] [2024-07-21T21:11:37.581Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions {"name":"projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[personalresume-b4d29]: beginning deploy... 
+[info] i  hosting[personalresume-b4d29]: found 10 files in build 
+[debug] [2024-07-21T21:11:37.612Z] [hosting] uploading with 200 concurrency
+[debug] [2024-07-21T21:11:37.621Z] [hosting] hash cache [YnVpbGQ] stored for 10 files
+[debug] [2024-07-21T21:11:37.621Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":4}
+[debug] [2024-07-21T21:11:37.623Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17:populateFiles [none]
+[debug] [2024-07-21T21:11:37.625Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17:populateFiles {"files":{"/index.html":"cc324a76878ac735384a01235d1653e4aa91c445995e9449fbd67bd75c39773a","/asset-manifest.json":"2f87d54bc02ac3cf566e3af2a5483001f9dfbca83f2ab4d9f8fdbad7bd8f4cb2","/static/media/pfp.3d1820c10df24e63ea9a.jpg":"f43f5503ba412a8c82d4a78ed05306b72ac8cd3df1f67b195a8f5edfb061dfff","/static/js/main.1cadf235.js.map":"87fd50721cfa175f7cd03f161df7a0b1d2351ddcdb2d7920e4351fd4c5f896eb","/static/js/main.1cadf235.js.LICENSE.txt":"3acf5f2f9e5decc10ebaef82989eb1dc0978cf352afdf9b073e3fbbc2cb8ae1e","/static/js/main.1cadf235.js":"1839d5df518dad946ba5484fa3cb54345291719301b17986f163dbf456ae221c","/static/js/453.44e07427.chunk.js.map":"ba4a50a459b92fd5aed88da47a3ed75b3764951c4126f25ebe18b1cb1c05c77e","/static/js/453.44e07427.chunk.js":"d8fa926efe073e4a14f4897e8f7c323880467ad4b3e3b2d19da56134b2d2bddf","/static/css/main.a9b0c8ba.css.map":"1bad51b44288c101b6343f0c050a8e15fae50a165b37e32c7b833f7fc0793314","/static/css/main.a9b0c8ba.css":"581cec66d02dd5c9e4963c5445cf76e3fa5cb30cc9aa154acb3d01b379d308f7"}}
+[debug] [2024-07-21T21:11:38.101Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17:populateFiles 200
+[debug] [2024-07-21T21:11:38.102Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/personalresume-b4d29/versions/05981ad4bfdd6c17/files"}
+[debug] [2024-07-21T21:11:38.104Z] [hosting][populate queue][FINAL] {"max":485,"min":485,"avg":485,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":485}
+[debug] [2024-07-21T21:11:38.104Z] [hosting] uploads queued: 0
+[debug] [2024-07-21T21:11:38.105Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1721596298105}
+[info] i  hosting: upload complete 
+[info] +  hosting[personalresume-b4d29]: file upload complete 
+[debug] [2024-07-21T21:11:38.107Z] [hosting] deploy completed after 523ms
+[debug] [2024-07-21T21:11:38.108Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "personalresume-b4d29"
+    },
+    "version": "projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17"
+  }
+]
+[info] i  hosting[personalresume-b4d29]: finalizing version... 
+[debug] [2024-07-21T21:11:38.115Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions/05981ad4bfdd6c17 updateMask=status%2Cconfig
+[debug] [2024-07-21T21:11:38.116Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions/05981ad4bfdd6c17 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-07-21T21:11:38.609Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions/05981ad4bfdd6c17 200
+[debug] [2024-07-21T21:11:38.610Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/versions/05981ad4bfdd6c17 {"name":"projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-21T21:11:36.816919Z","createUser":{"email":"leule.merso2003@gmail.com"},"finalizeTime":"2024-07-21T21:11:38.513088Z","finalizeUser":{"email":"leule.merso2003@gmail.com"}}
+[debug] [2024-07-21T21:11:38.612Z] [hosting] finalized version for personalresume-b4d29:[object Object]
+[info] +  hosting[personalresume-b4d29]: version finalized 
+[info] i  hosting[personalresume-b4d29]: releasing new version... 
+[debug] [2024-07-21T21:11:38.615Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/channels/live/releases versionName=projects%2F855342086613%2Fsites%2Fpersonalresume-b4d29%2Fversions%2F05981ad4bfdd6c17
+[debug] [2024-07-21T21:11:38.615Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/channels/live/releases {}
+[debug] [2024-07-21T21:11:39.201Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/channels/live/releases 200
+[debug] [2024-07-21T21:11:39.202Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/personalresume-b4d29/channels/live/releases {"name":"projects/855342086613/sites/personalresume-b4d29/channels/live/releases/1721596298422000","version":{"name":"projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-21T21:11:36.816919Z","createUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"},"finalizeTime":"2024-07-21T21:11:38.513088Z","finalizeUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"}},"type":"DEPLOY","releaseTime":"2024-07-21T21:11:38.422Z","releaseUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"}}
+[debug] [2024-07-21T21:11:39.204Z] [hosting] release: {"name":"projects/855342086613/sites/personalresume-b4d29/channels/live/releases/1721596298422000","version":{"name":"projects/855342086613/sites/personalresume-b4d29/versions/05981ad4bfdd6c17","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-21T21:11:36.816919Z","createUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"},"finalizeTime":"2024-07-21T21:11:38.513088Z","finalizeUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"}},"type":"DEPLOY","releaseTime":"2024-07-21T21:11:38.422Z","releaseUser":{"email":"leule.merso2003@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINf4W4ICgdq56auhzGTHZ-2Vy0bHgdre1dUNmwqUTk6Ck6pCvShQ"}}
+[info] +  hosting[personalresume-b4d29]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/personalresume-b4d29/overview
+[info] Hosting URL: https://personalresume-b4d29.web.app
