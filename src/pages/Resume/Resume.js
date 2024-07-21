@@ -1,15 +1,13 @@
 import React from "react";
 import "./Resume.css";
-import { Container, Grid, Paper, Typography } from "@mui/material";
+import { Grid, Paper, Typography } from "@mui/material";
 import resumeData from "../../utils/resumeData";
 import CustomTimeline, {
   CustomTimelineSeparator,
 } from "../../components/Timeline/Timeline";
 import WorkIcon from "@mui/icons-material/Work";
 import TimelineItem from "@mui/lab/TimelineItem";
-import Timeline from "@mui/lab/Timeline";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
+
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineContent from "@mui/lab/TimelineContent";
 import SchoolIcon from "@mui/icons-material/School";

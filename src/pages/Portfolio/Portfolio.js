@@ -3,14 +3,11 @@ import "./Portfolio.css";
 import {
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
-  Container,
   Grid,
   Dialog,
   DialogTitle,
-  Paper,
   Tab,
   Tabs,
   Typography,
@@ -47,17 +44,18 @@ const Portfolio = () => {
             label="All"
             value="All"
             className={
-              tabValue == "All" ? "customTabs_item active" : "customTabs_item"
+              tabValue === "All" ? "customTabs_item active" : "customTabs_item"
             }
           />
 
           {[...new Set(resumeData.projects.map((item) => item.tag))].map(
             (tag) => (
               <Tab
+                key={tag}  // Add key for each Tab
                 label={tag}
                 value={tag}
                 className={
-                  tabValue == tag ? "customTabs_item active" : "customTabs_item"
+                  tabValue === tag ? "customTabs_item active" : "customTabs_item"
                 }
               />
             )
@@ -66,12 +64,11 @@ const Portfolio = () => {
       </Grid>
 
       {/* Projects */}
-
       <Grid item xs={12}>
         <Grid container spacing={3}>
           {resumeData.projects.map((project) => (
-            <>
-              {tabValue == project.tag || tabValue == "All" ? (
+            <React.Fragment key={project.title}> {/* Use React.Fragment with key */}
+              {tabValue === project.tag || tabValue === "All" ? (
                 <Grid item xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card
@@ -105,7 +102,7 @@ const Portfolio = () => {
                   </Grow>
                 </Grid>
               ) : null}
-            </>
+            </React.Fragment>
           ))}
         </Grid>
       </Grid>
@@ -114,20 +111,17 @@ const Portfolio = () => {
         open={Boolean(projectDialog)}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
-        maxWidth={'md'} //change size of pop up when seeing projects
+        maxWidth={'md'}
         fullWidth
       >
         <DialogTitle onClose={() => setProjectDialog(false)}>
           {projectDialog.title}
         </DialogTitle>
 
-        {/* <img src={projectDialog.image} alt="" className="projectDialog_image" /> */}
         <DialogContent style={{ height: "80vh"}}>
-            {projectDialog.images && (
-              <ImageGallery images={projectDialog.images}/>
-            )}
-
-
+          {projectDialog.images && (
+            <ImageGallery images={projectDialog.images}/>
+          )}
 
           <Typography className="projectDialog_description">
             {projectDialog.description}
@@ -135,7 +129,13 @@ const Portfolio = () => {
         </DialogContent>
         <DialogActions className="projectDialog_actions">
           {projectDialog?.links?.map((link) => (
-            <a href={link.link} target="_blank" className="projectDialog_icon">
+            <a
+              key={link.link}  // Add a unique key for each link
+              href={link.link}
+              target="_blank"
+              rel="noopener noreferrer"  // Add this attribute
+              className="projectDialog_icon"
+            >
               {link.icon}
             </a>
           ))}

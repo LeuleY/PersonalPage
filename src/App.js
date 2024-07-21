@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
 
-import Switch from "@mui/material/Switch";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Profile from "./components/Profile/Profile";

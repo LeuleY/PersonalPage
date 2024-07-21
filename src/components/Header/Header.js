@@ -1,37 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  Button,
-  Form,
-  FormControl,
   Nav,
   Navbar,
-  NavDropdown,
 } from "react-bootstrap";
 import {
-  Link,
   NavLink,
-  withRouter,
-  useNavigate,
-  useLocation,
-  useParams,
 } from "react-router-dom";
 import HomeRounded from "@mui/icons-material/HomeRounded";
-import SchoolRounded from "@mui/icons-material/SchoolRounded";
-import WorkRounded from "@mui/icons-material/WorkRounded";
-import Facebook from "@mui/icons-material/Facebook";
-import Twitter from "@mui/icons-material/Twitter";
-import LinkedIn from "@mui/icons-material/LinkedIn";
-import GitHub from "@mui/icons-material/GitHub";
 import Telegram from "@mui/icons-material/Telegram";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/Button";
 import './Header.css'
 
-
 const Header = (props) => {
-  const location = useLocation();
-
   const pathName = props?.location?.pathname;
 
   return (
@@ -56,7 +38,6 @@ const Header = (props) => {
           </Nav.Link>
 
           {/* Portfolio Link */}
-          {/* may be a capital P */}
           <Nav.Link
             as={NavLink}
             to="/portfolio"
@@ -66,21 +47,21 @@ const Header = (props) => {
           >
             PORTFOLIO
           </Nav.Link>
-
-
-          
         </Nav>
         <div className="header_right">
-            {Object.keys(resumeData.Socials).map((key) =>(
-              <a href={resumeData.Socials[key].link} target="_blank">
-                {resumeData.Socials[key].icon}
+          {Object.keys(resumeData.Socials).map((key) => (
+            <a
+              key={key}  // Add a unique key for each element in a list
+              href={resumeData.Socials[key].link}
+              target="_blank"
+              rel="noopener noreferrer"  // Add this attribute
+            >
+              {resumeData.Socials[key].icon}
+            </a>
+          ))}
 
-              </a>
-            ))}
-
-            <CustomButton text={"Hire Me"} icon={<Telegram/>} />
-
-          </div>
+          <CustomButton text={"Hire Me"} icon={<Telegram/>} />
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );
